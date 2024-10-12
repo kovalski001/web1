@@ -311,7 +311,30 @@ footer {
     padding: 2.5em 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 869px) {
+    .first-card-container {
+        max-width: 650px;
+        max-height: auto;
+    }
+    .second-card-container {
+        width: 600px;
+        height: 434px;
+    }
+    .third-card-container1 {
+        width: 600px;
+        height: 434px;
+    }
+    .fourth-card-container {
+        width: 600px;
+        height: 434px;
+    }
+    .fifth-card-container {
+        width: 600px;
+        height: 434px;
+    }
+}
+
+@media (max-width: 760px) {
     .first-card-container {
         max-width: 650px;
         max-height: auto;
