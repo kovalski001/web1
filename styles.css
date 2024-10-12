@@ -313,24 +313,24 @@ footer {
 
 @media (max-width: 869px) {
     .first-card-container {
-        max-width: 650px;
+        max-width: 450px;
         max-height: auto;
     }
     .second-card-container {
-        width: 600px;
-        height: 434px;
+        width: 300px;
+        height: 134px;
     }
     .third-card-container1 {
-        width: 600px;
-        height: 434px;
+        width: 300px;
+        height: 234px;
     }
     .fourth-card-container {
-        width: 600px;
-        height: 434px;
+        width: 300px;
+        height: 134px;
     }
     .fifth-card-container {
-        width: 600px;
-        height: 434px;
+        width: 300px;
+        height: 134px;
     }
 }
 
