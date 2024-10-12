@@ -2,7 +2,7 @@ body {
     font-family: INHERIT;
     margin: 0;
     padding: 0;
-    background-image: url('111.JPG');
+    background-image: url('/img/111.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
