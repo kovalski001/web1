@@ -371,3 +371,113 @@ footer {
         padding: 6px 12px;
     }
 }
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .me img {
+        max-width: 100px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .home-text h1 {
+        font-size: 3em;
+    }
+
+    .home-text h2 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 0.5em 1em;
+    }
+}
+
+@media (max-width: 360px) {
+    .home-text h1 {
+        font-size: 2.5em;
+    }
+
+    .home-text h2 {
+        font-size: 1.2em;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 0.4em 0.8em;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+    .home-text h1 {
+        font-size: 4em;
+    }
+
+    .home-text h2 {
+        font-size: 1.8em;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 0.8em 1.6em;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1536px) {
+    .home-text h1 {
+        font-size: 5em;
+    }
+
+    .home-text h2 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 1em 2em;
+    }
+}
+
+@media (min-width: 1537px) {
+    .home-text h1 {
+        font-size: 6em;
+    }
+
+    .home-text h2 {
+        font-size: 2.5em;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+    }
+
+    .button {
+        font-size: 22px;
+        padding: 1.2em 2.4em;
+    }
+}
