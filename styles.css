@@ -163,6 +163,11 @@ main {
     gap: 1em;
 }
 
+.first-card-container img {
+    width: 564px;
+    height: 846px;
+}
+
 .second-card-container {
     display: flex;
     overflow-x: auto;
@@ -180,6 +185,11 @@ main {
     gap: 1em;
 }
 
+.third-card-container img {
+    width: 564px;
+    height: 846px;
+}
+
 .fourth-card-container {
     display: inline-flex;
     overflow-x: auto;
@@ -187,11 +197,21 @@ main {
     gap: 1em;
 }
 
+.fourth-card-container img {
+    width: 564px;
+    height: 846px;
+}
+
 .fifth-card-container {
     display: inline-flex;
     align-items: flex-start;
     overflow-x: auto;
     padding: 1em 0;
+}
+
+.fifth-card-container img {
+    width: 1444px;
+    height: 955px;
 }
 
 .card {
