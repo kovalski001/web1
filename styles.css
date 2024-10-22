@@ -100,14 +100,7 @@ p {
     color: black;
 }
 
-p1 {
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: aliceblue;
-}
-
-p2 {
+.footer-text {
     font-size: 21px;
     font-weight: bold;
     color: aliceblue;
