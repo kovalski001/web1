@@ -53,8 +53,8 @@ nav ul li a {
 .button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 3em;
-    padding: 2.5em 4em;
-    font-size: 20px;
+    padding: 20px 40px;
+    font-size: 22px;
     text-shadow: 1px 1px 1px #000;
     font-weight: bold;
     color: #fff;
