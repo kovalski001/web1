@@ -1,5 +1,5 @@
 body {
-    font-family: INHERIT;
+    font-family: inherit;
     margin: 0;
     padding: 0;
     background-image: url('./img/111.jpg');
@@ -55,7 +55,7 @@ nav ul li a {
     margin-top: 1em;
     padding: 1em 2em;
     font-size: 20px;
-    text-shadow: 1px;
+    text-shadow: 1px 1px 1px #000;
     font-weight: bold;
     color: #fff;
     background-color: #ee6300;
@@ -75,7 +75,6 @@ h2 {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    margin-left: -70%;
     color: aliceblue;
 }
 
@@ -215,7 +214,7 @@ main {
 }
 
 .card {
-    background-color: rgba(300, 355, 355, 0.45);
+    background-color: rgba(200, 255, 255, 0.45);
     border: 2px solid #ddd;
     border-radius: 30px;
     padding: 1.5em;
