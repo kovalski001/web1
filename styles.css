@@ -365,9 +365,20 @@ footer {
         gap: 1.5em;
     }
 
-    .first-card-container .card {
+    .second-card-container .card {
         width: 70px;
         height: 120px;
+    }
+
+    .me img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .me p {
+        font-size: 20px;
+        max-width: 600px;
+        margin: 2.5em;
     }
     
     nav ul li {
