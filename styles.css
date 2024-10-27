@@ -176,9 +176,6 @@ main {
 .third-card-container1 {
     width: 60%;
     max-width: 600px;
-    display: inline-flex;
-    align-items: flex-start;
-    overflow-x: auto;
     padding: 1em 0;
     gap: 1em;
 }
@@ -264,8 +261,7 @@ main {
 }
 
 blockquote {
-    margin: 0;
-    text-align: center;
+    margin: auto;
 }
 
 .picture {
