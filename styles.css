@@ -389,8 +389,6 @@ footer {
 
     .third-card-container {
         padding: 0;
-        height: 80vh;
-        width: 100vh;
     }
 
     .me img {
@@ -412,5 +410,10 @@ footer {
         font-size: 15px;
     }
 
+    .fourth-card-container {
+        padding: 0;
+        gap: 1.5em;
+        
+    }
     
 }
