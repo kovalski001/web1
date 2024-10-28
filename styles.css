@@ -114,7 +114,6 @@ th {
 td {
     font-family: 'Times New Roman';
     font-size: 21px;
-    font-weight: bold;
     color: black;
     padding: 10px;
 }
@@ -316,12 +315,7 @@ footer {
     padding: 2.5em 0;
 }
 
-@media (max-width: 600px) {  
-    .homepage {
-        height: 400vh;
-        width: 225vh;
-    }
-
+@media (max-width: 600px) {
     .home-text h1 {
         font-size: 10em;
         margin: 80px;
