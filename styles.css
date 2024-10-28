@@ -316,3 +316,28 @@ footer {
     text-align: center;
     padding: 2.5em 0;
 }
+
+@media (max-width: 600px) {
+    .home-text h1 {
+        font-size: 4em;
+        margin: 0;
+    }
+
+    .home-text h2 {
+        font-size: 1.3em;
+        margin: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 50px;
+    }
+
+    .button {
+        margin: 10px;
+    }
+}
