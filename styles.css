@@ -236,8 +236,6 @@ main {
 }
 
 .me {
-    display: flex;
-    align-items: flex-start;
     background-color: rgba(300, 355, 355, 0.45);
     border: 2px solid #ddd;
     border-radius: 30px;
@@ -340,4 +338,79 @@ footer {
     .button {
         margin: 10px;
     }
+
+    main {
+        padding: 2em;
+    }
+
+    h2 {
+        font-size: 30px;
+        padding: 25px;
+        margin: 10px;
+    }
+    
+    .card {
+        min-width: 200px;
+    }
+
+    .card img {
+        max-width: 85%;
+        height: auto;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .first-card-container {
+        padding: 0;
+        gap: 1.5em;
+        height: 80vh;
+        width: 100vh;
+    }
+
+    .second-card-container {
+        padding: 0;
+        width: 46.8vh;
+    }
+
+    th {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    td {
+        font-size: 17px;
+    }
+
+    .third-card-container {
+        padding: 0;
+        height: 80vh;
+        width: 100vh;
+    }
+
+    .me img {
+        max-width: 85%;
+        height: auto;
+    }    
+    
+    blockquote {
+        margin: auto;
+    }
+
+    .me p {
+        font-size: 17px;
+        max-width: 600px;
+        margin: 0.5em;
+    }
+
+    figcaption {
+        font-size: 15px;
+    }
+
+    
 }
