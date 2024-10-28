@@ -318,148 +318,91 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .homepage {
+        height: 270vh;
+        width: 150vh;
+    }
+
     .home-text h1 {
         font-size: 10em;
-        margin: 80px;
+        margin: 0;
     }
 
     .home-text h2 {
-        font-size: 5em;
-        margin: 0;
+        font-size: 4em;
+        margin: 50px;
     }
 
     nav ul li {
         display: block;
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     nav ul li a {
-        font-size: 75px;
+        font-size: 50px;
     }
 
     .button {
-        width: 75%;
-        padding: 40px;
-        font-size: 60px;
-        margin: 100px;
-        text-shadow: 5px 5px 5px #000;
-        border-radius: 60px;
+        width: 70%;
+        padding: 30px;
+        font-size: 45px;
+        margin: 50px;
     }
 
     h2 {
-        font-size: 120px;
+        font-size: 70px;
         margin: 10px;
         padding: 50px;
     }
 
     .card {
-        padding: 50px;
+        padding: 20px;
         margin: 15px;
-        border-radius: 60px;
-        border: 5px solid;
     }
 
     .card img {
-        height: 180vh;
-        width: auto;
-        border-radius: 60px;
+        height: 120vh;
     }
 
     .card h3 {
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .card p {
-        font-size: 55px;
+        font-size: 35px;
     }
 
     .first-card-container {
         padding: 0.5em 0;
         gap: 1.5em;
-        height: 330vh;
-        width: 300vh;
+        height: 220vh;
+        width: 200vh;
     }
 
     .first-card-container .card {
-        min-width: 800px;
-        height: 1950px;
+        min-width: 500px;
+        height: 1350px;
         
     }
 
     .second-card-container {
-        padding: 0.5em 0;
+        padding: 1.5em 0;
         gap: 1.5em;
-        height: 180vh;
-        width: 200vh;
     }
 
     .second-card-container .card {
-        min-width: 1200px;
-        height: 1000px;
-    }
-
-    th {
-        font-size: 73px;
-        padding: 20px;
-    }
-
-    td {
-        font-size: 65px;
-        padding: 18px;
-    }
-
-    .third-card-container {
-        padding: 0.5em 0;
-        gap: 1.5em;
-        height: 330vh;
-        width: 300vh;
-    }
-
-    .third-card-container .card {
-        min-width: 1200px;
-        height: 1000px;
+        width: 70px;
+        height: 120px;
     }
 
     .me img {
         max-width: 300px;
         height: auto;
-    }    
-    
-    blockquote {
-        margin: auto;
     }
 
     .me p {
         font-size: 20px;
         max-width: 600px;
         margin: 2.5em;
-    }
-
-    .fourth-card-container {
-        padding: 0.5em 0;
-        gap: 1.5em;
-        height: 330vh;
-        width: 300vh;
-    }
-
-    .fourth-card-container .card {
-        min-width: 1200px;
-        height: 1000px;
-    }
-
-    .picture {
-        padding: 1.5em;
-        margin: 0;
-        min-width: 300px;
-    }
-    
-    .picture img {
-        max-width: 400px;
-        height: auto;
-    }
-    
-    .picture p {
-        max-width: 600px;
-        margin: 1.5em 0;
     }
 }
