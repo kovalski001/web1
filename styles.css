@@ -174,6 +174,8 @@ main {
 }
 
 .third-card-container1 {
+    display: flex;
+    overflow-x: auto;
     width: 40%;
     max-width: 600px;
     padding: 1em 0;
