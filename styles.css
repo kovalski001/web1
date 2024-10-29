@@ -405,7 +405,7 @@ footer {
     }
 
     .me p {
-        font-size: 15px;
+        font-size: 14px;
         max-width: 600px;
         margin: 0.5em;
     }
@@ -417,7 +417,7 @@ footer {
     .fourth-card-container {
         padding: 0;
         gap: 1.5em;
-        height: 83vh;
+        height: 92vh;
         width: 52vh;
     }
 
@@ -442,7 +442,7 @@ footer {
 
     .picture p {
         margin: 0;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .fifth-card-container {
@@ -459,7 +459,7 @@ footer {
     }
     
     .address p {
-        font-size: 15px;
+        font-size: 14px;
         margin: 0.5em;
     }
 
