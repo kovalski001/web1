@@ -468,7 +468,7 @@ footer {
     }
 }
 
-@media (min-width: 321px) and (max-width: 600px) {
+@media (min-width: 321px) and (max-width: 375px) {
     .home-text h1 {
         font-size: 4em;
         margin: 0;
@@ -611,5 +611,34 @@ footer {
     .address p {
         font-size: 15px;
         margin: 0.5em;
+    }
+
+    @media (min-width: 376px) and (max-width: 600px) {
+    .home-text h2 {
+        font-size: 1.2em;
+    }
+    
+    .card {
+        min-width: 230px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .first-card-container {
+        height: 82vh;
+    }
+
+    .me p {
+        font-size: 18px;
+    }
+
+    figcaption {
+        font-size: 16px;
+    }
+
+    .fourth-card-container {
+        height: 85vh;
     }
 }
