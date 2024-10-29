@@ -476,7 +476,8 @@ footer {
 
     .home-text h2 {
         font-size: 1.3em;
-        margin: 10px;
+        margin: 5px;
+        padding: 5px;
     }
 
     nav ul li {
