@@ -176,8 +176,6 @@ main {
 .third-card-container1 {
     display: flex;
     overflow-x: auto;
-    width: 40%;
-    max-width: 400px;
     padding: 1em 0;
     gap: 1em;
 }
@@ -188,7 +186,7 @@ main {
 }
 
 .fourth-card-container {
-    display: inline-flex;
+    display: flex;
     overflow-x: auto;
     padding: 1em 0;
     gap: 1em;
