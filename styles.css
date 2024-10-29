@@ -415,10 +415,33 @@ footer {
     .fourth-card-container {
         padding: 0;
         gap: 1.5em;
-        height: 75vh;
+        height: 93vh;
         width: 40vh;
     }
 
-    
+    .picture {
+        min-width: 200px;
+    }
+
+    .picture img {
+        max-width: 85%;
+        height: auto;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .picture p {
+        margin: 0;
+        font-size: 16px;
+    }
+
     
 }
