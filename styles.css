@@ -177,7 +177,7 @@ main {
     display: flex;
     overflow-x: auto;
     width: 40%;
-    max-width: 600px;
+    max-width: 400px;
     padding: 1em 0;
     gap: 1em;
 }
@@ -188,7 +188,7 @@ main {
 }
 
 .fourth-card-container {
-    display: flex;
+    display: inline-flex;
     overflow-x: auto;
     padding: 1em 0;
     gap: 1em;
@@ -416,7 +416,7 @@ footer {
         padding: 0;
         gap: 1.5em;
         height: 93vh;
-        width: 40vh;
+        width: 60vh;
     }
 
     .picture {
@@ -441,6 +441,13 @@ footer {
     .picture p {
         margin: 0;
         font-size: 16px;
+    }
+
+    .fifth-card-container {
+        display: flex;
+        align-items: flex-start;
+        overflow-x: auto;
+        padding: 1em 0;
     }
 
     
