@@ -188,7 +188,7 @@ main {
 }
 
 .fourth-card-container {
-    display: inline-flex;
+    display: flex;
     overflow-x: auto;
     padding: 1em 0;
     gap: 1em;
@@ -415,7 +415,10 @@ footer {
     .fourth-card-container {
         padding: 0;
         gap: 1.5em;
-        
+        height: 75vh;
+        width: 40vh;
     }
+
+    
     
 }
