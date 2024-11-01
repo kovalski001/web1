@@ -612,6 +612,7 @@ footer {
         font-size: 15px;
         margin: 0.5em;
     }
+}
 
 @media (min-width: 376px) and (max-width: 600px) {
     .home-text h1 {
