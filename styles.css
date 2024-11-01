@@ -905,3 +905,149 @@ footer {
         margin: 0.5em;
     }    
 }
+
+@media (width: 390px) and (height: 844px) {
+    .home-text h1 {
+        font-size: 4em;
+        margin: 0;
+    }
+
+    .home-text h2 {
+        font-size: 1.3em;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 23px;
+    }
+
+    .button {
+        margin: 10px;
+    }
+
+    main {
+        padding: 2em;
+    }
+
+    h2 {
+        font-size: 30px;
+        padding: 25px;
+        margin: 10px;
+    }
+    
+    .card {
+        min-width: 200px;
+    }
+
+    .card img {
+        max-width: 85%;
+        height: auto;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .first-card-container {
+        padding: 0;
+        gap: 1.5em;
+        height: 67vh;
+        width: 43vh;
+    }
+
+    .second-card-container {
+        padding: 0;
+        width: 38.5vh;
+    }
+
+    th {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    td {
+        font-size: 17px;
+    }
+
+    .third-card-container {
+        padding: 0;
+    }
+
+    .me img {
+        max-width: 85%;
+        height: auto;
+    }    
+    
+    blockquote {
+        margin: auto;
+    }
+
+    .me p {
+        font-size: 17px;
+        max-width: 600px;
+        margin: 0.5em;
+    }
+
+    figcaption {
+        font-size: 15px;
+    }
+
+    .fourth-card-container {
+        padding: 0;
+        gap: 1.5em;
+        height: 78vh;
+        width: 43vh;
+    }
+
+    .picture {
+        min-width: 200px;
+    }
+
+    .picture img {
+        max-width: 85%;
+        height: auto;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .picture p {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .fifth-card-container {
+        padding: 0;
+    }
+
+    .address {
+        min-width: 275px;
+        padding: 1em;
+    }
+    
+    .address img {
+        max-width: 100%;
+    }
+    
+    .address p {
+        font-size: 15px;
+        margin: 0.5em;
+    }
+}
