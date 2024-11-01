@@ -198,7 +198,7 @@ main {
 }
 
 .fifth-card-container {
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
     overflow-x: auto;
     padding: 1em 0;
@@ -246,14 +246,14 @@ main {
 .me img {
     border: 2px solid #000000;
     border-radius: 20px;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     margin-right: 20px;
 }
 
 .me p {
-    font-size: 28px;
-    max-width: 900px;
+    font-size: 22px;
+    max-width: 600px;
     margin: 0.5em;
 }
 
@@ -291,14 +291,14 @@ blockquote {
     padding: 1.5em;
     margin: 0;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    flex: 0 auto;
-    min-width: 300px;
+    flex: 0;
+    min-width: 1000px;
 }
 
 .address img {
     border: 2px solid #000000;
     border-radius: 20px;
-    max-width: 70%;
+    max-width: 99.3%;
     height: auto;
 }
 
