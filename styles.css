@@ -173,7 +173,7 @@ main {
     gap: 1em;
 }
 
-.third-card-container1 {
+.third-card-container {
     display: flex;
     overflow-x: auto;
     padding: 1em 0;
@@ -186,7 +186,7 @@ main {
 }
 
 .fourth-card-container {
-    display: flex;
+    display: inline-flex;
     overflow-x: auto;
     padding: 1em 0;
     gap: 1em;
