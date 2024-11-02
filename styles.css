@@ -450,7 +450,7 @@ footer {
     }
 
     .address {
-        min-width: 200px;
+        min-width: 220px;
         padding: 1em;
     }
     
@@ -465,6 +465,10 @@ footer {
 
     footer {
         padding: 0.5em 0;
+    }
+
+    .footer-text {
+        font-size: 18px;
     }
 }
 
@@ -961,7 +965,7 @@ footer {
     .first-card-container {
         padding: 0;
         gap: 1.5em;
-        height: 67vh;
+        height: 64vh;
         width: 43vh;
     }
 
@@ -1005,7 +1009,7 @@ footer {
     .fourth-card-container {
         padding: 0;
         gap: 1.5em;
-        height: 78vh;
+        height: 75vh;
         width: 43vh;
     }
 
@@ -1038,7 +1042,7 @@ footer {
     }
 
     .address {
-        min-width: 275px;
+        min-width: 290px;
         padding: 1em;
     }
     
