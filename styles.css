@@ -1055,3 +1055,23 @@ footer {
         margin: 0.5em;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .first-card-container {
+        display: flex;
+        overflow-x: auto;
+        padding: 1em 0;
+        gap: 1em;
+        width: 688px;
+        height: auto;
+    }
+
+    .card {
+        width: 600px;
+    }
+
+    .fourth-card-container {
+        height: 1070px;
+    }
+    
+}
