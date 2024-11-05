@@ -1346,5 +1346,9 @@ footer {
     
     .fourth-card-container {
         width: 117vh;
-    } 
+    }
+
+    .address {
+        min-width: 1220px;
+    }
 }
