@@ -1204,10 +1204,6 @@ footer {
 
 @media (min-width: 768px) and (max-width: 809px) {
     .first-card-container {
-        display: flex;
-        overflow-x: auto;
-        padding: 1em 0;
-        gap: 1em;
         width: 688px;
         height: auto;
     }
@@ -1233,11 +1229,21 @@ footer {
 
 @media (min-width: 810px) and (max-width: 834px) {
     .first-card-container {
-        display: flex;
-        overflow-x: auto;
-        padding: 1em 0;
-        gap: 1em;
         width: 730px;
         height: auto;
     }
+
+    fourth-card-container {
+        width: 720px;
+        height: auto;
+    }
+
+    .picture img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .address {
+        min-width: 590px;
+    }    
 }
