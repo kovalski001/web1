@@ -1294,7 +1294,7 @@ footer {
     }    
 }
 
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) and (max-width: 1365px) {
     .first-card-container {
         width: 150vh;
         height: auto;
@@ -1302,6 +1302,16 @@ footer {
 
     .fourth-card-container {
         width: 132vh;
+    } 
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+    .first-card-container {
+        width: 168vh;
+        height: auto;
     }
-    
+
+    .fourth-card-container {
+        width: 137vh;
+    } 
 }
