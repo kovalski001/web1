@@ -1227,7 +1227,28 @@ footer {
     }      
 }
 
-@media (min-width: 810px) and (max-width: 1023px) {
+@media (min-width: 810px) and (max-width: 833px) {
+    .first-card-container {
+        width: 730px;
+        height: auto;
+    }
+
+    .fourth-card-container {
+        width: 710px;
+        height: auto;
+    }
+
+    .picture img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .address {
+        min-width: 590px;
+    }    
+}
+
+@media (min-width: 834px) and (max-width: 1023px) {
     .first-card-container {
         width: 730px;
         height: auto;
