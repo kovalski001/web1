@@ -1293,3 +1293,15 @@ footer {
         min-width: 800px;
     }    
 }
+
+@media (min-width: 1280px) and (max-width: 1920px) {
+    .first-card-container {
+        width: 150vh;
+        height: auto;
+    }
+
+    .fourth-card-container {
+        width: 132vh;
+    }
+    
+}
