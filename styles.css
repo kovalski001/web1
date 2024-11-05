@@ -1249,22 +1249,26 @@ footer {
 }
 
 @media (min-width: 1024px) and (max-width: 1080px) {
-    .first-card-container {
-        width: 730px;
+        .first-card-container {
+        width: 945px;
         height: auto;
     }
 
-    .fourth-card-container {
-        width: 720px;
+    .card {
+        width: 625px;
+    }
+
+        .fourth-card-container {
+        width: 820px;
         height: auto;
     }
 
-    .picture img {
-        max-width: 300px;
+        .picture img {
+        max-width: 350px;
         height: auto;
     }
 
     .address {
-        min-width: 590px;
+        min-width: 800px;
     }    
 }
