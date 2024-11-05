@@ -1351,4 +1351,8 @@ footer {
     .address {
         min-width: 1220px;
     }
+
+    .footer-text {
+        font-size: 25px;
+    }
 }
