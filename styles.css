@@ -1339,6 +1339,11 @@ footer {
 }
 
 @media (min-width: 1600px) and (max-width: 1920px) {
+    .first-card-container {
+        width: 170vh;
+        height: auto;
+    }
+    
     .fourth-card-container {
         width: 117vh;
     } 
