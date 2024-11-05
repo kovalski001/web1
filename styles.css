@@ -965,13 +965,13 @@ footer {
     .first-card-container {
         padding: 0;
         gap: 1.5em;
-        height: 70vh;
-        width: 44vh;
+        height: 82vh;
+        width: 52vh;
     }
 
     .second-card-container {
         padding: 0;
-        width: 40vh;
+        width: 47vh;
     }
 
     th {
@@ -1009,8 +1009,8 @@ footer {
     .fourth-card-container {
         padding: 0;
         gap: 1.5em;
-        height: 73vh;
-        width: 44vh;
+        height: 86vh;
+        width: 52vh;
     }
 
     .picture {
