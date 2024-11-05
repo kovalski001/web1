@@ -1221,7 +1221,7 @@ footer {
         width: 688px;
     }
 
-    picture img {
+    .picture img {
         max-width: 300px;
         height: auto;
     }
