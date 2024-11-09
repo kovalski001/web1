@@ -1389,6 +1389,21 @@ footer {
     }
 }
 
+@media (min-width: 1701px) and (max-width: 1900px) {   
+    .first-card-container {
+        width: 1650px;
+        height: auto;
+    }
+    
+    .address {
+        min-width: 1270px;
+    }
+
+    .footer-text {
+        font-size: 28px;
+    }
+}
+
 @media (min-width: 1920px) and (max-width: 2000px) {
     .first-card-container {
         width: 190vh;
@@ -1404,7 +1419,7 @@ footer {
     }
 
     .footer-text {
-        font-size: 25px;
+        font-size: 28px;
     }
 }
 
