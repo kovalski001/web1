@@ -630,6 +630,10 @@ footer {
         padding: 5px;
     }
 
+    h2 {
+        text-align: center;
+    }
+
     nav ul li {
         display: block;
         margin: 10px 0;
