@@ -29,6 +29,8 @@ body {
 .home-text h2 {
     font-size: 2em;
     margin: 0;
+    text-align: center;
+    transform: none;
 }
 
 nav {
