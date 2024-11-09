@@ -1407,3 +1407,22 @@ footer {
         font-size: 25px;
     }
 }
+
+@media (min-width: 2001px) and (max-width: 2200px) {
+    .first-card-container {
+        width: 200vh;
+        height: auto;
+    }
+
+    fifth-card-container {
+        width: 120vh;
+    }
+
+    .address {
+        min-width: 111vh;
+    }
+
+    .footer-text {
+        font-size: 28px;
+    }
+}
