@@ -1410,7 +1410,7 @@ footer {
 
 @media (min-width: 2001px) and (max-width: 2200px) {
     .first-card-container {
-        width: 200vh;
+        width: 210vh;
         height: auto;
     }
 
@@ -1425,7 +1425,7 @@ footer {
 
 @media (min-width: 2201px) and (max-width: 2300px) {
     .first-card-container {
-        width: 220vh;
+        width: 230vh;
         height: auto;
     }
 
