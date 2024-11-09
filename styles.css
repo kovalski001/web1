@@ -1389,7 +1389,7 @@ footer {
     }
 }
 
-@media (min-width: 1920px) and (max-width: 1921px) {
+@media (min-width: 1920px) and (max-width: 2000px) {
     .first-card-container {
         width: 190vh;
         height: auto;
