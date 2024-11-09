@@ -510,7 +510,7 @@ footer {
         padding: 25px;
         margin: 10px;
         text-align: center;
-        transform: translateX(0px);
+        transform: none;
     }
     
     .card {
@@ -638,7 +638,7 @@ footer {
 
     h2 {
         text-align: center;
-        transform: translateX(0px);
+        transform: none;
     }
 
     nav ul li {
@@ -809,7 +809,7 @@ footer {
         padding: 25px;
         margin: 10px;
         text-align: center;
-        transform: translateX(0px);
+        transform: none;
     }
     
     .card {
@@ -957,7 +957,7 @@ footer {
         padding: 25px;
         margin: 10px;
         text-align: center;
-        transform: translateX(0px);
+        transform: none;
     }
     
     .card {
@@ -1105,7 +1105,7 @@ footer {
         padding: 25px;
         margin: 10px;
         text-align: center;
-        transform: translateX(0px);
+        transform: none;
     }
     
     .card {
@@ -1226,7 +1226,7 @@ footer {
     }
 
     h2 {
-        transform: translateX(0px);
+        transform: none;
         text-align: center;
     }
 
@@ -1251,7 +1251,7 @@ footer {
 
 @media (min-width: 810px) and (max-width: 833px) {
     h2 {
-        transform: translateX(0px);
+        transform: none;
         text-align: center;
     }
     
@@ -1277,7 +1277,7 @@ footer {
 
 @media (min-width: 834px) and (max-width: 1023px) {
     h2 {
-        transform: translateX(0px);
+        transform: none;
         text-align: center;
     }
     
@@ -1311,12 +1311,12 @@ footer {
         width: 625px;
     }
 
-        .fourth-card-container {
+    .fourth-card-container {
         width: 820px;
         height: auto;
     }
 
-        .picture img {
+    .picture img {
         max-width: 350px;
         height: auto;
     }
