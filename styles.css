@@ -352,6 +352,8 @@ footer {
         font-size: 28px;
         padding: 10px;
         margin: 10px;
+        text-align: center;
+        transform: translateX(0px);
     }
     
     .card {
@@ -505,6 +507,8 @@ footer {
         font-size: 30px;
         padding: 25px;
         margin: 10px;
+        text-align: center;
+        transform: translateX(0px);
     }
     
     .card {
@@ -632,6 +636,7 @@ footer {
 
     h2 {
         text-align: center;
+        transform: translateX(0px);
     }
 
     nav ul li {
@@ -801,6 +806,8 @@ footer {
         font-size: 30px;
         padding: 25px;
         margin: 10px;
+        text-align: center;
+        transform: translateX(0px);
     }
     
     .card {
@@ -947,6 +954,8 @@ footer {
         font-size: 30px;
         padding: 25px;
         margin: 10px;
+        text-align: center;
+        transform: translateX(0px);
     }
     
     .card {
@@ -1093,6 +1102,8 @@ footer {
         font-size: 30px;
         padding: 25px;
         margin: 10px;
+        text-align: center;
+        transform: translateX(0px);
     }
     
     .card {
@@ -1212,6 +1223,11 @@ footer {
         height: auto;
     }
 
+    h2 {
+        transform: translateX(0px);
+        text-align: center;
+    }
+
     .card {
         width: 600px;
     }
@@ -1232,6 +1248,11 @@ footer {
 }
 
 @media (min-width: 810px) and (max-width: 833px) {
+    h2 {
+        transform: translateX(0px);
+        text-align: center;
+    }
+    
     .first-card-container {
         width: 730px;
         height: auto;
@@ -1253,6 +1274,11 @@ footer {
 }
 
 @media (min-width: 834px) and (max-width: 1023px) {
+    h2 {
+        transform: translateX(0px);
+        text-align: center;
+    }
+    
     .first-card-container {
         width: 730px;
         height: auto;
@@ -1274,7 +1300,7 @@ footer {
 }
 
 @media (min-width: 1024px) and (max-width: 1080px) {
-        .first-card-container {
+    .first-card-container {
         width: 945px;
         height: auto;
     }
@@ -1342,7 +1368,7 @@ footer {
     } 
 }
 
-@media (min-width: 1600px) and (max-width: 1700px) {
+@media (min-width: 1600px) and (max-width: 1700px) {   
     .first-card-container {
         width: 170vh;
         height: auto;
