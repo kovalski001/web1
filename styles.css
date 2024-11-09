@@ -1425,12 +1425,27 @@ footer {
 
 @media (min-width: 2201px) and (max-width: 2300px) {
     .first-card-container {
-        width: 230vh;
+        width: 2300px;
         height: auto;
     }
 
     .address {
-        min-width: 103.5vh;
+        min-width: 1265px;
+    }
+
+    .footer-text {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 2301px) {
+    .first-card-container {
+        width: 2500px;
+        height: auto;
+    }
+
+    .address {
+        min-width: 1270px;
     }
 
     .footer-text {
