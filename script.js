@@ -1,3 +1,3 @@
 function register() {
-    window.location.href = 'https://t.me/cnbbygrowl';
+    window.location.href = 'https://t.me/cnbbyy';
 }
