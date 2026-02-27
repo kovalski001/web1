@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Личный кабинет | Салон Красоты Beauty</title>
+    <meta name="description" content="Личный кабинет клиента салона красоты Beauty в Иркутске. Управление записями, история посещений.">
+    <meta name="keywords" content="салон красоты Иркутск, личный кабинет, запись на услуги, косметология">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cabinet-styles.css">
+</head>
+<body>
+    <header class="inner-page">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Салон Красоты<br><span>Beauty</span></h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="index.html#price">Цены</a></li>
+                    <li><a href="index.html#director">Руководство</a></li>
+                    <li><a href="index.html#specialists">Специалисты</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="cabinet.html" class="active">Кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cabinet-main">
+        <section class="cabinet-section">
+            <h2>Личный кабинет</h2>
+            
+            <div class="cabinet-container">
+                <!-- Профиль пользователя -->
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="avatar">
+                            <img src="./img/avatar-placeholder.jpg" alt="Аватар" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'avatar-placeholder\'><span>АБ</span></div>'">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Анна Белова</h3>
+                            <p class="membership">Клиент с 2023 года</p>
+                            <p class="bonus">Бонусов: <strong>2,500 ₽</strong></p>
+                        </div>
+                        <button class="edit-btn" onclick="openEditProfile()">Редактировать</button>
+                    </div>
+                    <div class="profile-details">
+                        <div class="detail-item">
+                            <span class="label">Телефон:</span>
+                            <span class="value">+7 (999) 123-45-67</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Email:</span>
+                            <span class="value">anna@email.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Дата рождения:</span>
+                            <span class="value">15 марта 1990</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Предстоящие записи -->
+                <div class="appointments-card">
+                    <h3>Предстоящие записи</h3>
+                    <div class="appointments-list">
+                        <div class="appointment-item">
+                            <div class="appointment-date">
+                                <span class="day">25</span>
+                                <span class="month">Янв</span>
+                            </div>
+                            <div class="appointment-info">
+                                <h4>Маникюр + Гель-лак</h4>
+                                <p>Мастер: Александра Высоцкая</p>
+                                <p>Время: 14:00 - 15:30</p>
+                            </div>
+                            <div class="appointment-actions">
+                                <button class="cancel-btn" onclick="cancelAppointment(1)">Отменить</button>
+                            </div>
+                        </div>
+                        <div class="appointment-item">
+                            <div class="appointment-date">
+                                <span class="day">02</span>
+                                <span class="month">Фев</span>
+                            </div>
+                            <div class="appointment-info">
+                                <h4>Окрашивание волос</h4>
+                                <p>Мастер: Беляковская Анастасия</p>
+                                <p>Время: 10:00 - 12:00</p>
+                            </div>
+                            <div class="appointment-actions">
+                                <button class="cancel-btn" onclick="cancelAppointment(2)">Отменить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button new-appointment-btn" onclick="window.location.href='index.html#services'">Записаться на услугу</button>
+                </div>
+
+                <!-- История посещений -->
+                <div class="history-card">
+                    <h3>История посещений</h3>
+                    <div class="history-list">
+                        <div class="history-item">
+                            <div class="history-date">10 января 2025</div>
+                            <div class="history-service">
+                                <h4>Спа-массаж</h4>
+                                <p>Мастер: Елена Иванова</p>
+                            </div>
+                            <div class="history-price">4,500 ₽</div>
+                        </div>
+                        <div class="history-item">
+                            <div class="history-date">28 декабря 2024</div>
+                            <div class="history-service">
+                                <h4>Макияж вечерний</h4>
+                                <p>Мастер: Александра Высоцкая</p>
+                            </div>
+                            <div class="history-price">3,000 ₽</div>
+                        </div>
+                        <div class="history-item">
+                            <div class="history-date">15 декабря 2024</div>
+                            <div class="history-service">
+                                <h4>Стрижка + Укладка</h4>
+                                <p>Мастер: Беляковская Анастасия</p>
+                            </div>
+                            <div class="history-price">5,500 ₽</div>
+                        </div>
+                        <div class="history-item">
+                            <div class="history-date">01 декабря 2024</div>
+                            <div class="history-service">
+                                <h4>SMAS-Лифтинг HIFU</h4>
+                                <p>Мастер: Мария Петрова</p>
+                            </div>
+                            <div class="history-price">11,000 ₽</div>
+                        </div>
+                    </div>
+                    <button class="show-more-btn" onclick="showMoreHistory()">Показать ещё</button>
+                </div>
+
+                <!-- Избранные услуги -->
+                <div class="favorites-card">
+                    <h3>Избранные услуги</h3>
+                    <div class="favorites-grid">
+                        <a href="service-nails.html" class="favorite-item">
+                            <img src="./img/666.jpg" alt="Ногтевой сервис">
+                            <span>Ногтевой сервис</span>
+                        </a>
+                        <a href="service-hair.html" class="favorite-item">
+                            <img src="./img/333.jpg" alt="Парикмахерский сервис">
+                            <span>Парикмахерский сервис</span>
+                        </a>
+                        <a href="service-spa.html" class="favorite-item">
+                            <img src="./img/555.jpg" alt="Спа-салон">
+                            <span>Спа-салон</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-text">© 2025 Салон Красоты Beauty.<br><a href="https://vk.com/cnbbygirl">Вконтакте</a><br><a href="https://t.me/cnbbyy">Телеграм</a></p>
+    </footer>
+
+    <!-- Модальное окно редактирования профиля -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeEditProfile()">&times;</span>
+            <h3>Редактировать профиль</h3>
+            <form id="editForm" onsubmit="saveProfile(event)">
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" value="Анна Белова" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" value="+7 (999) 123-45-67" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="anna@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthday">Дата рождения</label>
+                    <input type="date" id="birthday" value="1990-03-15">
+                </div>
+                <button type="submit" class="button">Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="cabinet-script.js"></script>
+</body>
+</html>
