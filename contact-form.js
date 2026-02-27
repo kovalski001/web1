@@ -1,20 +1,18 @@
-// JavaScript для формы обратной связи
-
-// Открыть форму обратной связи
+// открыть форму обратной связи
 function openContactForm() {
     const modal = document.getElementById('contactModal');
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
 
-// Закрыть форму обратной связи
+// закрыть форму обратной связи
 function closeContactForm() {
     const modal = document.getElementById('contactModal');
     modal.classList.remove('active');
     document.body.style.overflow = '';
 }
 
-// Отправить форму
+// отправить форму
 function submitContactForm(event) {
     event.preventDefault();
     
@@ -35,28 +33,28 @@ function submitContactForm(event) {
     // Логируем данные (в реальном проекте здесь будет отправка на сервер)
     console.log('Отправка формы обратной связи:', formData);
     
-    // Закрываем форму
+    // закрываем форму
     closeContactForm();
     
-    // Показываем уведомление об успехе
+    // показываем уведомление об успехе
     showSuccessNotification();
     
-    // Очищаем форму
+    // очищаем форму
     document.getElementById('contactForm').reset();
 }
 
-// Показать уведомление об успешной отправке
+// показать уведомление об успешной отправке
 function showSuccessNotification() {
     const success = document.getElementById('contactSuccess');
     success.classList.add('active');
     
-    // Скрываем через 4 секунды
+    // скрываем через 4 секунды
     setTimeout(() => {
         success.classList.remove('active');
     }, 4000);
 }
 
-// Закрытие модального окна при клике вне его
+// закрытие модального окна при клике вне его
 document.addEventListener('click', function(event) {
     const modal = document.getElementById('contactModal');
     if (event.target === modal) {
@@ -64,14 +62,14 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// Закрытие модального окна по клавише Escape
+// закрытие модального окна по клавише esc
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         closeContactForm();
     }
 });
 
-// Маска для телефона
+// для телефона
 document.addEventListener('DOMContentLoaded', function() {
     const phoneInput = document.getElementById('contactPhone');
     
@@ -105,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Анимация появления кнопки при скролле
+// анимация появления кнопки при скролле
 let contactButton = document.getElementById('contactButton');
 let lastScrollTop = 0;
 
@@ -123,7 +121,7 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
 });
 
-// Инициализация - кнопка скрыта изначально
+// инициализация - кнопка скрыта изначально
 document.addEventListener('DOMContentLoaded', function() {
     contactButton.style.opacity = '0';
     contactButton.style.visibility = 'hidden';
