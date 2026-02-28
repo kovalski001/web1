@@ -8,6 +8,7 @@
     <meta name="keywords" content="салон красоты Иркутск, личный кабинет, запись на услуги, косметология">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="cabinet-styles.css">
+    <link rel="stylesheet" href="contact-form.css">
 </head>
 <body>
     <header class="inner-page">
@@ -97,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="button new-appointment-btn" onclick="window.location.href='index.html#services'">Записаться на приём</button>
+                     <button class="button new-appointment-btn" onclick="openContactForm()">Записаться на приём</button>
                 </div>
 
                 <div class="history-card">
@@ -142,10 +143,31 @@
         </section>
     </main>
 
+    <div id="contactModal" class="contact-modal">
+        <div class="contact-modal-content">
+            <span class="contact-close" onclick="closeContactForm()">&times;</span>
+            <h2>Запись на приём</h2>
+            <form id="contactForm" onsubmit="submitContactForm(event)">
+                <input type="text" id="contactName" placeholder="Ваше имя" required>
+                <input type="text" id="contactContact" placeholder="Телефон / Email" required>
+                <textarea id="contactMessage" placeholder="Сообщение" rows="4" required></textarea>
+                <button type="submit" class="contact-submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="contactSuccess" class="contact-success">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+    </div>
+
     <footer>
         <p class="footer-text">© 2026 Салон Красоты Beauty.<br><a href="https://vk.com/cnbbygirl">Вконтакте</a><br><a href="https://t.me/cnbbyy">Телеграм</a></p>
     </footer>
 
     <script src="script.js"></script>
+    <script src="contact-form.js"></script>
 </body>
 </html>
