@@ -73,6 +73,14 @@ nav ul li a {
 }
 
 @font-face {
+    font-family: 'TT';
+    src: url('fonts WOFF/TT_Fors_Trial_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Faberge';
     src: url('fonts WOFF/Faberge-Regular.woff') format('woff');
     font-weight: normal;
@@ -94,9 +102,6 @@ body, p, address p, address p, picture p, me p, a, th, card p, td, li, button, i
 
 h1 {
     font-family: 'Princess', sans-serif;
-}
-
-h1 {
     font-size: 30px;
     font-weight: bold;
     color: aliceblue;
@@ -131,7 +136,7 @@ span {
 }
 
 p {
-    font-family: 'Times New Roman';
+    font-family: 'TT';
     font-size: 22px;
     color: black;
 }
@@ -1532,6 +1537,7 @@ footer {
         font-size: 30px;
     }
 }
+
 
 
 
