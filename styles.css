@@ -72,6 +72,14 @@ nav ul li a {
     transition: background-color 0.3s;
 }
 
+@font-face {
+    font-family: 'Faberge';
+    src: url('fonts WOFF/Faberge-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 h1 {
     font-size: 30px;
     font-weight: bold;
@@ -1508,3 +1516,4 @@ footer {
         font-size: 30px;
     }
 }
+
