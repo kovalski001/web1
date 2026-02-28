@@ -13,11 +13,13 @@
     box-shadow: 0 4px 20px rgba(238, 99, 0, 0.4);
     z-index: 1000;
     transition: all 0.3s ease;
+    animation: pulse 2s infinite;
 }
 
 .contact-button:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 25px rgba(238, 99, 0, 0.5);
+    animation: none;
 }
 
 .contact-button svg {
@@ -45,7 +47,6 @@
     visibility: visible;
 }
 
-/* Модальное окно */
 .contact-modal {
     display: none;
     position: fixed;
@@ -95,101 +96,60 @@
     cursor: pointer;
     padding: 5px;
     transition: transform 0.3s;
+    font-size: 24px;
+    color: #999;
 }
 
 .contact-close:hover {
     transform: rotate(90deg);
 }
 
-.contact-close svg {
-    width: 24px;
-    height: 24px;
-    color: #999;
-}
-
-.contact-modal-content h3 {
+.contact-modal-content h2 {
     text-align: center;
     color: #ee6300;
-    margin: 0 0 5px 0;
+    margin: 0 0 25px 0;
     font-size: 1.8em;
 }
 
-.contact-subtitle {
-    text-align: center;
-    color: #666;
-    margin: 0 0 25px 0;
-    font-size: 0.95em;
-}
-
-/* Форма */
-.contact-form-group {
-    margin-bottom: 15px;
-}
-
-.contact-form-group input,
-.contact-form-group select,
-.contact-form-group textarea {
+.contact-modal-content input,
+.contact-modal-content textarea,
+.contact-modal-content button {
     width: 100%;
     padding: 15px 20px;
+    margin: 10px 0;
     border: 2px solid #e0e0e0;
     border-radius: 15px;
     font-size: 16px;
     font-family: inherit;
     box-sizing: border-box;
-    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.contact-form-group input:focus,
-.contact-form-group select:focus,
-.contact-form-group textarea:focus {
+.contact-modal-content input:focus,
+.contact-modal-content textarea:focus {
     outline: none;
     border-color: #ee6300;
     box-shadow: 0 0 0 3px rgba(238, 99, 0, 0.1);
 }
 
-.contact-form-group input::placeholder,
-.contact-form-group textarea::placeholder {
-    color: #999;
-}
-
-.contact-form-group select {
-    appearance: none;
-    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") no-repeat right 15px center;
-    background-size: 18px;
-    cursor: pointer;
-}
-
-.contact-form-group textarea {
-    resize: vertical;
-    min-height: 80px;
-}
-
-.contact-submit {
-    width: 100%;
-    padding: 15px;
+.contact-modal-content button.contact-submit {
     background: linear-gradient(135deg, #ee6300, #ff8533);
     color: white;
     border: none;
-    border-radius: 15px;
-    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.contact-submit:hover {
+.contact-modal-content button.contact-submit:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(238, 99, 0, 0.4);
 }
 
-.contact-submit:active {
-    transform: translateY(0);
-}
-
+/* Уведомление об успехе */
 .contact-success {
     display: none;
     position: fixed;
-    bottom: 100px;
+    bottom: 30px;
     right: 30px;
     background: #4CAF50;
     color: white;
@@ -198,12 +158,12 @@
     z-index: 2001;
     animation: successSlideIn 0.3s ease-out;
     box-shadow: 0 5px 20px rgba(76, 175, 80, 0.4);
+    align-items: center;
+    gap: 15px;
 }
 
 .contact-success.active {
     display: flex;
-    align-items: center;
-    gap: 15px;
 }
 
 @keyframes successSlideIn {
@@ -228,19 +188,10 @@
     font-size: 16px;
 }
 
-/* Стили для ссылок на карточки */
-.card-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.card-link .card {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card-link:hover .card {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(238, 99, 0, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(238, 99, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(238, 99, 0, 0); }
 }
 
 @media (max-width: 768px) {
@@ -250,55 +201,23 @@
         width: 55px;
         height: 55px;
     }
-    
     .contact-button svg {
         width: 24px;
         height: 24px;
     }
-    
     .contact-tooltip {
         display: none;
     }
-    
     .contact-modal-content {
         padding: 30px 25px;
         margin: 20px;
     }
-    
-    .contact-modal-content h3 {
+    .contact-modal-content h2 {
         font-size: 1.5em;
     }
-    
-    .contact-form-group input,
-    .contact-form-group select,
-    .contact-form-group textarea {
-        padding: 12px 15px;
-        font-size: 15px;
-    }
-    
     .contact-success {
         right: 20px;
         left: 20px;
         bottom: 90px;
     }
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(238, 99, 0, 0.4);
-    }
-    70% {
-        box-shadow: 0 0 0 15px rgba(238, 99, 0, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(238, 99, 0, 0);
-    }
-}
-
-.contact-button {
-    animation: pulse 2s infinite;
-}
-
-.contact-button:hover {
-    animation: none;
 }
