@@ -43,9 +43,9 @@
                             <img src="./img/avatar-placeholder.jpg" alt="Аватарка" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'avatar-placeholder\'><span>АБ</span></div>'">
                         </div>
                         <div class="profile-info">
-                            <h3>Анна Белова</h3>
+                            <h3>Alyona Belykh</h3>
                             <p class="membership">Клиент с 2023 года</p>
-                            <p class="bonus">Бонусов: <strong>2,500 ₽</strong></p>
+                            <p class="bonus">Бонусов: <strong>2 500 ₽</strong></p>
                         </div>
                         <button class="edit-btn" onclick="openEditProfile()">Редактировать</button>
                     </div>
@@ -56,11 +56,11 @@
                         </div>
                         <div class="detail-item">
                             <span class="label">Email:</span>
-                            <span class="value">anna@email.com</span>
+                            <span class="value">alyonab@mail.xx</span>
                         </div>
                         <div class="detail-item">
                             <span class="label">Дата рождения:</span>
-                            <span class="value">15 марта 1990</span>
+                            <span class="value">8 марта 1888</span>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="button new-appointment-btn" onclick="window.location.href='index.html#services'">Записаться на услугу</button>
+                    <button class="button new-appointment-btn" onclick="window.location.href='index.html#services'">Записаться на приём</button>
                 </div>
 
                 <div class="history-card">
@@ -146,34 +146,6 @@
         <p class="footer-text">© 2026 Салон Красоты Beauty.<br><a href="https://vk.com/cnbbygirl">Вконтакте</a><br><a href="https://t.me/cnbbyy">Телеграм</a></p>
     </footer>
 
-
-    <div id="editModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeEditProfile()">&times;</span>
-            <h3>Редактировать профиль</h3>
-            <form id="editForm" onsubmit="saveProfile(event)">
-                <div class="form-group">
-                    <label for="name">Имя</label>
-                    <input type="text" id="name" value="Анна Белова" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Телефон</label>
-                    <input type="tel" id="phone" value="+7 (999) 123-45-67" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" value="anna@email.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="birthday">Дата рождения</label>
-                    <input type="date" id="birthday" value="1990-03-15">
-                </div>
-                <button type="submit" class="button">Сохранить</button>
-            </form>
-        </div>
-    </div>
-
     <script src="script.js"></script>
-    <script src="cabinet-script.js"></script>
 </body>
 </html>
