@@ -103,19 +103,19 @@
 }
 
 .profile-info h3 {
-    color: #ee6300;
+    color: #fff;
     margin: 0;
     font-size: 1.8em;
 }
 
 .profile-info .membership {
-    font-size: 0.9em;
-    color: #666;
+    font-size: 14px;
+    color: #000;
     margin: 0.5em 0;
 }
 
 .profile-info .bonus {
-    font-size: 1.1em;
+    font-size: 18px;
     margin: 0.5em 0;
 }
 
@@ -142,7 +142,6 @@
 
 .profile-details {
     border-top: 1px solid #ddd;
-    padding-top: 1.5em;
 }
 
 .detail-item {
@@ -153,14 +152,19 @@
 }
 
 .detail-item .label {
-    color: #666;
-    font-size: 16px;
+    color: #000;
+    font-family: 'TT';
+    font-weight: normal;
+    font-size: 18px;
+    transform: translateX(20px);
 }
 
 .detail-item .value {
-    color: #333;
-    font-weight: bold;
-    font-size: 16px;
+    color: #000;
+    font-family: 'TT';
+    font-weight: normal;
+    font-size: 18px;
+    transform: translateX(-20px);
 }
 
 .appointments-card h3, .history-card h3, .favorites-card h3 {
