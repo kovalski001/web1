@@ -100,9 +100,10 @@
 }
 
 .contact-modal-content h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     color: #ee6300;
+    transform: translateX(100px);
 }
 
 .contact-modal-content input,
