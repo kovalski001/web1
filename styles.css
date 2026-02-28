@@ -80,6 +80,10 @@ nav ul li a {
     font-display: swap;
 }
 
+body, p, a, li, button, input, textarea, select {
+    font-family: 'Faberge', sans-serif;
+}
+
 h1 {
     font-size: 30px;
     font-weight: bold;
@@ -1516,4 +1520,5 @@ footer {
         font-size: 30px;
     }
 }
+
 
