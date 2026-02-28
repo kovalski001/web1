@@ -70,6 +70,7 @@ nav ul li a {
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin: 1.2em auto 0;
 }
 
 @font-face {
@@ -1542,6 +1543,7 @@ footer {
         font-size: 30px;
     }
 }
+
 
 
 
