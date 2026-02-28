@@ -69,8 +69,15 @@ nav ul li a {
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin: 1.2em auto 0;
+    display: inline-block; /* чтобы transform работал правильно */
+}
+
+.button:hover {
+    background-color: #ee6300;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(238, 99, 0, 0.4);
 }
 
 @font-face {
@@ -1543,6 +1550,7 @@ footer {
         font-size: 30px;
     }
 }
+
 
 
 
