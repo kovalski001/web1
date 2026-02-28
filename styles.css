@@ -262,7 +262,6 @@ main {
 
 .card {
     background-color: rgba(300, 355, 355, 0.45);
-    border: 2px solid #ddd;
     border-radius: 30px;
     padding: 1.5em;
     margin: 0;
@@ -288,7 +287,6 @@ main {
 
 .me {
     background-color: rgba(300, 355, 355, 0.45);
-    border: 2px solid #ddd;
     border-radius: 30px;
     padding: 1.5em;
     margin: 0;
@@ -314,7 +312,6 @@ blockquote {
 
 .picture {
     background-color: rgba(300, 355, 355, 0.45);
-    border: 2px solid #ddd;
     border-radius: 30px;
     padding: 1.5em;
     margin: 0;
@@ -337,7 +334,6 @@ blockquote {
 
 .address {
     background-color: rgba(300, 355, 355, 0.45);
-    border: 2px solid #ddd;
     border-radius: 30px;
     padding: 1.5em;
     margin: 0;
@@ -1546,6 +1542,7 @@ footer {
         font-size: 30px;
     }
 }
+
 
 
 
