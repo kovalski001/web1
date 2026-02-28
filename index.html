@@ -7,6 +7,7 @@
     <meta name="description" content="Салон красоты Beauty, здесь вы увидите широкий спектр качественных услуг и самых довольных клиентов!">
     <meta name="keywords" content="салон красоты Иркутск, косметология, парикмахерская, макияж, спа, наращивание ногтей, педикюр, массаж">
     <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="contact-form.css">
 </head>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -182,42 +183,32 @@
             </div>
         </div>
     </section>
+		 </main>
 
-		<div id="contactModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeContactForm()">&times;</span>
-        <h2>Запись на приём</h2>
-        <form id="contactForm" onsubmit="submitContactForm(event)">
-            <input type="text" id="contactName" placeholder="Ваше имя" required>
-            
-            <input type="text" id="contactContact" placeholder="Телефон/email" required>
-            
-            <textarea id="contactMessage" placeholder="Сообщение" rows="4" required></textarea>
-            
-            <button type="submit">Отправить</button>
-        </form>
+		<div id="contactModal" class="contact-modal">
+        <div class="contact-modal-content">
+            <span class="contact-close" onclick="closeContactForm()">&times;</span>
+            <h2>Запись на приём</h2>
+            <form id="contactForm" onsubmit="submitContactForm(event)">
+                <input type="text" id="contactName" placeholder="Ваше имя" required>
+                <input type="text" id="contactContact" placeholder="Телефон/Email" required>
+                <textarea id="contactMessage" placeholder="Сообщение" rows="4" required></textarea>
+                <button type="submit" class="contact-submit">Отправить</button>
+            </form>
+        </div>
     </div>
-</div>
 
 <div id="contactSuccess" class="success-notification">
     Спасибо! Мы свяжемся с вами в ближайшее время.
 </div>
-    </div>
-</div>
-
-<div id="contactSuccess" class="success-notification">
-    Спасибо! Мы свяжемся с вами в ближайшее время.
-</div>
-                </div>
-            </div>
-        </section>
-			
-    </main>
+	
     <footer>
         <p class="footer-text">&copy; 2026 Салон Красоты Beauty<br><a href="https://vk.com/cnbbygirl">Вконтакте</a><br><a href="https://t.me/cnbbyy">Телеграм</a></p>
     </footer>
+	<script src="contact-form.js"></script>
 </body>
 </html>
+
 
 
 
