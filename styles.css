@@ -104,6 +104,10 @@ body, p, a {
     font-family: 'TT', sans-serif;
 }
 
+a {
+    font-size: 15px;
+}
+
 h1 {
     font-family: 'Princess', sans-serif;
     font-size: 30px;
@@ -1542,6 +1546,7 @@ footer {
         font-size: 30px;
     }
 }
+
 
 
 
