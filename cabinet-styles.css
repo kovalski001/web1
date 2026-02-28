@@ -105,7 +105,7 @@
 .profile-info h3 {
     color: #fff;
     margin: 0;
-    font-size: 1.8em;
+    font-size: 30px;
 }
 
 .profile-info .membership {
@@ -168,10 +168,10 @@
 }
 
 .appointments-card h3, .history-card h3, .favorites-card h3 {
-    color: #ee6300;
+    color: #fff;
     margin-top: 0;
     margin-bottom: 1em;
-    font-size: 1.5em;
+    font-size: 30px;
 }
 
 .appointments-list {
@@ -199,13 +199,14 @@
 }
 
 .appointment-date .day {
-    font-size: 1.8em;
+    font-size: 30px;
     font-weight: bold;
     display: block;
+    transform: translateX(0px);
 }
 
 .appointment-date .month {
-    font-size: 0.9em;
+    font-size: 24px;
 }
 
 .appointment-info {
@@ -215,23 +216,25 @@
 .appointment-info h4 {
     color: #333;
     margin: 0 0 0.3em 0;
-    font-size: 1.1em;
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: 0 0 BLACK;
 }
 
 .appointment-info p {
-    margin: 0.2em 0;
-    font-size: 0.9em;
+    margin: 3px;
+    font-size: 14px;
     color: #666;
 }
 
 .cancel-btn {
     background: transparent;
-    border: 1px solid #dc3545;
-    color: #dc3545;
-    padding: 0.5em 1em;
+    border: 1px solid #ee6300;
+    color: #ee6300;
+    padding: 12px;
     border-radius: 15px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 18px;
     transition: all 0.3s;
 }
 
