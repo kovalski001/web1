@@ -106,6 +106,7 @@
 .add-review-section h3 {
     text-align: center;
     color: #ee6300;
+    font-size: 40px;
     margin-top: 0;
     margin-bottom: 1.5em;
 }
@@ -128,7 +129,7 @@
     padding: 1em;
     border: 2px solid #e0e0e0;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 18px;
     box-sizing: border-box;
     transition: border-color 0.3s;
 }
