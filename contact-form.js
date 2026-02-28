@@ -14,6 +14,7 @@ function submitContactForm(event) {
     const form = document.getElementById('contactForm');
     const formData = new FormData(form);
 
+    // Укажите ваш endpoint от Formspree (он уже есть)
     fetch('https://formspree.io/f/xnjbrlna', {
         method: 'POST',
         body: formData,
@@ -39,9 +40,13 @@ function showSuccessNotification() {
 
 document.addEventListener('click', function(event) {
     const modal = document.getElementById('contactModal');
-    if (event.target === modal) closeContactForm();
+    if (event.target === modal) {
+        closeContactForm();
+    }
 });
 
 document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') closeContactForm();
+    if (event.key === 'Escape') {
+        closeContactForm();
+    }
 });
