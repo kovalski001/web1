@@ -88,11 +88,11 @@ nav ul li a {
     font-display: swap;
 }
 
-body, p, a, li, button, input, textarea, select {
+body, p, address p, address p, picture p, me p, a, th, card p, td, li, button, input, textarea, select {
     font-family: 'Faberge', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: 'Princess', sans-serif;
 }
 
@@ -1532,6 +1532,7 @@ footer {
         font-size: 30px;
     }
 }
+
 
 
 
