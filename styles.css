@@ -59,7 +59,7 @@ nav ul li a {
 }
 
 .button {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Faberge';
     padding: 20px 40px;
     font-size: 22px;
     text-shadow: 2px 2px 2px #000;
@@ -96,11 +96,11 @@ nav ul li a {
     font-display: swap;
 }
 
-address p, picture p, me p, th, card p, td, li, button, input, textarea, select {
+body, address p, picture p, me p, th, card p, td, li, button, input, textarea, select {
     font-family: 'Faberge', sans-serif;
 }
 
-body, p, a {
+p, a {
     font-family: 'TT', sans-serif;
 }
 
@@ -145,7 +145,7 @@ span {
 
 p {
     font-family: 'TT';
-    font-size: 22px;
+    font-size: 20px;
     color: black;
 }
 
@@ -157,7 +157,7 @@ p {
 }
 
 th {
-    font-family: 'Times New Roman';
+    font-family: 'TT';
     font-size: 30px;
     font-weight: bold;
     color: black;
@@ -165,14 +165,14 @@ th {
 }
 
 td {
-    font-family: 'Times New Roman';
+    font-family: 'TT';
     font-size: 21px;
     color: black;
     padding: 10px;
 }
 
 figcaption {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: bold;
     color: #ee6300;
     text-shadow: 2px 2px 2px #000;
@@ -303,7 +303,7 @@ main {
 }
 
 .me p {
-    font-size: 22px;
+    font-size: 20px;
     max-width: 600px;
     margin: 0.5em;
 }
@@ -354,7 +354,7 @@ blockquote {
 }
 
 .address p {
-    font-size: 23px;
+    font-size: 20px;
     margin: 0.5em;
 }
 
@@ -1546,6 +1546,7 @@ footer {
         font-size: 30px;
     }
 }
+
 
 
 
