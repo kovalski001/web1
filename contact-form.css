@@ -95,13 +95,8 @@
     border: none;
     cursor: pointer;
     padding: 5px;
-    transition: transform 0.3s;
     font-size: 24px;
-    color: #999;
-}
-
-.contact-close:hover {
-    transform: rotate(90deg);
+    color: #ee6300;
 }
 
 .contact-modal-content h2 {
