@@ -267,7 +267,7 @@
 
 .history-date {
     color: #666;
-    font-size: 0.9em;
+    font-size: 14px;
     min-width: 120px;
 }
 
@@ -277,14 +277,16 @@
 }
 
 .history-service h4 {
-    color: #333;
+    color: #000;
     margin: 0 0 0.2em 0;
-    font-size: 1em;
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: 0 0 BLACK;
 }
 
 .history-service p {
     margin: 0;
-    font-size: 0.85em;
+    font-size: 14px;
     color: #666;
 }
 
@@ -303,7 +305,7 @@
     padding: 0.8em;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 1em;
     transition: all 0.3s;
 }
@@ -311,13 +313,6 @@
 .show-more-btn:hover {
     background: #ee6300;
     color: white;
-}
-
-/* Избранные услуги */
-.favorites-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
 }
 
 .favorite-item {
