@@ -182,6 +182,32 @@
             </div>
         </div>
     </section>
+
+		<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeContactForm()">&times;</span>
+        <h2>Запись на приём</h2>
+        <form id="contactForm" onsubmit="submitContactForm(event)">
+            <input type="text" id="contactName" placeholder="Ваше имя" required>
+            
+            <input type="text" id="contactContact" placeholder="Телефон/email" required>
+            
+            <textarea id="contactMessage" placeholder="Сообщение" rows="4" required></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<div id="contactSuccess" class="success-notification">
+    Спасибо! Мы свяжемся с вами в ближайшее время.
+</div>
+    </div>
+</div>
+
+<div id="contactSuccess" class="success-notification">
+    Спасибо! Мы свяжемся с вами в ближайшее время.
+</div>
                 </div>
             </div>
         </section>
@@ -192,6 +218,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
