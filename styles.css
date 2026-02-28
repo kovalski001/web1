@@ -142,6 +142,7 @@ p {
 }
 
 .footer-text {
+    font-family: 'Princess';
     font-size: 21px;
     font-weight: bold;
     color: aliceblue;
@@ -1537,6 +1538,7 @@ footer {
         font-size: 30px;
     }
 }
+
 
 
 
