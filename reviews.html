@@ -194,12 +194,11 @@
     </main>
 
     <footer>
-        <p class="footer-text">© 2025 Салон Красоты Beauty.<br><a href="https://vk.com/cnbbygirl">Вконтакте</a><br><a href="https://t.me/cnbbyy">Телеграм</a></p>
+        <p class="footer-text">© 2026 Салон Красоты Beauty.<br><a href="https://vk.com/cnbbygirl">Вконтакте</a><br><a href="https://t.me/cnbbyy">Телеграм</a></p>
     </footer>
 
     <script src="script.js"></script>
     <script>
-        // Выбор рейтинга
         document.querySelectorAll('.star-select').forEach(star => {
             star.addEventListener('click', function() {
                 const value = parseInt(this.dataset.value);
@@ -213,7 +212,6 @@
             });
         });
 
-        // Отправка отзыва
         function submitReview(event) {
             event.preventDefault();
             alert('Спасибо за ваш отзыв! Он будет опубликован после модерации.');
