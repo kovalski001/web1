@@ -62,20 +62,21 @@ nav ul li a {
     font-family: 'Faberge';
     padding: 20px 40px;
     font-size: 22px;
-    text-shadow: 2px 2px 2px #000;
     font-weight: bold;
-    color: #fff;
-    background-color: #ee6300;
-    border: none;
+    color: #ee6300;
+    background-color: transparent;
+    border: 2px solid #ee6300;
     border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin: 1.2em auto 0;
-    display: inline-block; /* чтобы transform работал правильно */
+    display: inline-block;
+    text-shadow: none;
 }
 
 .button:hover {
     background-color: #ee6300;
+    color: #fff;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(238, 99, 0, 0.4);
 }
@@ -1550,6 +1551,7 @@ footer {
         font-size: 30px;
     }
 }
+
 
 
 
