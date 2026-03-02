@@ -14,7 +14,7 @@ function submitContactForm(event) {
     const form = document.getElementById('contactForm');
     const formData = new FormData(form);
 
-    // endpoint от Formspree например
+    // endpoint от formspree например
     fetch('https://formspree.io/f/xnjbrlna', {
         method: 'POST',
         body: formData,
