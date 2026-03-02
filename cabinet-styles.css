@@ -60,7 +60,6 @@
 
 .profile-card, .appointments-card, .history-card, .favorites-card {
     background-color: rgba(300, 355, 355, 0.45);
-    border: 2px solid #ddd;
     border-radius: 30px;
     padding: 2em;
 }
