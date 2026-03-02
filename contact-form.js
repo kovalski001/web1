@@ -26,10 +26,10 @@ function submitContactForm(event) {
             showSuccessNotification();
             form.reset();
         } else {
-            alert('Ошибка отправки. Попробуйте позже.');
+            alert('Ошибка отправки. Попробуйте ещё раз');
         }
     })
-    .catch(() => alert('Ошибка соединения.'));
+    .catch(() => alert('Ошибка соединения :('));
 }
 
 function showSuccessNotification() {
