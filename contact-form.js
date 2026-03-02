@@ -35,7 +35,7 @@ function submitContactForm(event) {
 function showSuccessNotification() {
     const success = document.getElementById('contactSuccess');
     success.classList.add('active');
-    setTimeout(() => success.classList.remove('active'), 4000);
+    setTimeout(() => success.classList.remove('active'), 5000);
 }
 
 document.addEventListener('click', function(event) {
