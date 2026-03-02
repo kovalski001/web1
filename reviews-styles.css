@@ -24,11 +24,6 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.review-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
 .review-header {
     display: flex;
     align-items: center;
@@ -157,11 +152,6 @@
     color: #ddd;
     cursor: pointer;
     transition: color 0.2s;
-}
-
-.star-select:hover,
-.star-select.selected {
-    color: #ffc107;
 }
 
 .review-form .button {
