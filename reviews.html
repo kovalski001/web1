@@ -125,8 +125,6 @@
                         </select>
                     </div>
                     <div class="form-group">
-                    </div>
-                    <div class="form-group">
                         <textarea placeholder="Ваш отзыв" rows="4" required></textarea>
                     </div>
                     <button type="submit" class="button">Отправить отзыв</button>
@@ -141,19 +139,6 @@
 
     <script src="script.js"></script>
     <script>
-        document.querySelectorAll('.star-select').forEach(star => {
-            star.addEventListener('click', function() {
-                const value = parseInt(this.dataset.value);
-                document.querySelectorAll('.star-select').forEach((s, i) => {
-                    if (i < value) {
-                        s.classList.add('selected');
-                    } else {
-                        s.classList.remove('selected');
-                    }
-                });
-            });
-        });
-
         function submitReview(event) {
             event.preventDefault();
             alert('Спасибо за ваш отзыв! Он будет опубликован после модерации.');
