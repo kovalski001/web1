@@ -8,36 +8,42 @@ function closeContactForm() {
     document.body.style.overflow = '';
 }
 
+// отправка данных на сервер
 function submitContactForm(event) {
     event.preventDefault();
 
     const form = document.getElementById('contactForm');
     const formData = new FormData(form);
 
-    // endpoint от formspree например
-    fetch('https://formspree.io/f/xnjbrlna', {
+    // отправка данных на php обработчик
+    fetch('/backend/contact.php', {
         method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
+        body: formData
     })
     .then(response => {
-        if (response.ok) {
-            closeContactForm();
-            showSuccessNotification();
-            form.reset();
-        } else {
-            alert('Ошибка отправки. Попробуйте ещё раз');
+        if (!response.ok) {
+            return response.text().then(text => { throw new Error(text); });
         }
+        return response.text();
     })
-    .catch(() => alert('Ошибка соединения :('));
+    .then(message => {
+        closeContactForm();
+        showSuccessNotification();
+        form.reset();
+    })
+    .catch(error => {
+        alert('Ошибка: ' + error.message);
+    });
 }
 
+// уведа об успехе
 function showSuccessNotification() {
     const success = document.getElementById('contactSuccess');
     success.classList.add('active');
     setTimeout(() => success.classList.remove('active'), 5000);
 }
 
+// закрытие через эскейп
 document.addEventListener('click', function(event) {
     const modal = document.getElementById('contactModal');
     if (event.target === modal) {
