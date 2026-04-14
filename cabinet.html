@@ -44,11 +44,12 @@
                             <img src="./img/avatar-placeholder.jpg" alt="Аватарка" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'avatar-placeholder\'><span>АБ</span></div>'">
                         </div>
                         <div class="profile-info">
-                            <h3>Alyona Belykh</h3>
+                            <h3 id="profileName">Загрузка...</h3>
                             <p class="membership">Клиент с 2023 года</p>
                             <p class="bonus">Бонусов: <strong>2 500 ₽</strong></p>
                         </div>
-                        <button class="edit-btn" onclick="угу()">Редактировать профиль</button>
+                        <button class="edit-btn" id="editProfileBtn">Редактировать профиль</button>
+                        <a href="/backend/logout.php" class="logout-link" style="margin-left: 10px;">Выйти</a>
                     </div>
                     <div class="profile-details">
                         <div class="detail-item">
@@ -57,7 +58,7 @@
                         </div>
                         <div class="detail-item">
                             <span class="label">Email:</span>
-                            <span class="value">alyonab@mail.xx</span>
+                            <span class="value" id="profileEmail">-</span>
                         </div>
                         <div class="detail-item">
                             <span class="label">Дата рождения:</span>
@@ -80,7 +81,7 @@
                                 <p>Время: 14:00 - 15:30</p>
                             </div>
                             <div class="appointment-actions">
-                                <button class="cancel-btn" onclick="да(1)">Отменить</button>
+                                <button class="cancel-btn" onclick="alert('Функция в разработке')">Отменить</button>
                             </div>
                         </div>
                         <div class="appointment-item">
@@ -94,16 +95,16 @@
                                 <p>Время: 10:00 - 12:00</p>
                             </div>
                             <div class="appointment-actions">
-                                <button class="cancel-btn" onclick="да(2)">Отменить</button>
+                                <button class="cancel-btn" onclick="alert('Функция в разработке')">Отменить</button>
                             </div>
                         </div>
                     </div>
-                     <button class="button new-appointment-btn" onclick="openContactForm()">Записаться на приём</button>
+                    <button class="button new-appointment-btn" onclick="openContactForm()">Записаться на приём</button>
                 </div>
 
                 <div class="history-card">
                     <h3>История посещений</h3>
-                    <div class="history-list">
+                    <div class="history-list" id="historyList">
                         <div class="history-item">
                             <div class="history-date">10 января 2025</div>
                             <div class="history-service">
@@ -137,7 +138,7 @@
                             <div class="history-price">11 000 ₽</div>
                         </div>
                     </div>
-                    <button class="show-more-btn" onclick="ага()">Показать ещё</button>
+                    <button class="show-more-btn" onclick="alert('Показать ещё')">Показать ещё</button>
                 </div>
             </div>
         </section>
@@ -147,7 +148,7 @@
         <div class="contact-modal-content">
             <span class="contact-close" onclick="closeContactForm()">&times;</span>
             <h2>Запись на приём</h2>
-            <form id="contactForm" onsubmit="submitContactForm(event)">
+            <form id="contactForm">
                 <input type="text" id="contactName" placeholder="Ваше имя" required>
                 <input type="text" id="contactContact" placeholder="Телефон / Email" required>
                 <textarea id="contactMessage" placeholder="Сообщение" rows="4" required></textarea>
@@ -166,6 +167,69 @@
     <footer>
         <p class="footer-text">© 2026 Салон Красоты Beauty.<br><a href="https://vk.com/cnbbygirl">Вконтакте</a><br><a href="https://t.me/cnbbyy">Телеграм</a></p>
     </footer>
+
+    <script>
+        // загрузка данных юзера
+        async function loadUserInfo() {
+            try {
+                const response = await fetch('/backend/get_user.php');
+                if (!response.ok) {
+                    window.location.href = 'login.html';
+                    return;
+                }
+                const data = await response.json();
+                if (data.username) {
+                    document.getElementById('profileName').textContent = data.username;
+                }
+                if (data.email) {
+                    document.getElementById('profileEmail').textContent = data.email;
+                }
+            } catch (e) {
+                window.location.href = 'login.html';
+            }
+        }
+        loadUserInfo();
+
+        // редактировать профааайл
+        document.getElementById('editProfileBtn').addEventListener('click', function() {
+            alert('Сайт находится на доработке');
+        });
+
+        // отправка формы
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const contact = document.getElementById('contactContact').value;
+            const message = document.getElementById('contactMessage').value;
+
+            const formData = new FormData();
+            formData.append('name', name);
+            formData.append('contact', contact);
+            formData.append('message', message);
+
+            try {
+                const response = await fetch('/backend/contact.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.text();
+                if (response.ok) {
+                    document.getElementById('contactSuccess').style.display = 'block';
+                    closeContactForm();
+                    contactForm.reset();
+                    setTimeout(() => {
+                        document.getElementById('contactSuccess').style.display = 'none';
+                    }, 3000);
+                } else {
+                    alert('Ошибка: ' + result);
+                }
+            } catch (error) {
+                alert('Ошибка соединения с сервером');
+            }
+        });
+    </script>
 
     <script src="script.js"></script>
     <script src="contact-form.js"></script>
