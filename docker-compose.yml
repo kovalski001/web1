@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    image: php:8.2-cli-alpine
+    container_name: beauty_web
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./public:/var/www/html
+      - ./data:/var/www/data
+    working_dir: /var/www/html
+    command: php -S 0.0.0.0:8080 -t /var/www/html
+    networks:
+      - beauty_net
+
+networks:
+  beauty_net:
+    driver: bridge
