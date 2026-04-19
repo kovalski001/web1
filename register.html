@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | Салон Красоты Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cabinet-styles.css">
+    <link rel="stylesheet" href="contact-form.css">
+	<link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header class="inner-page">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Салон Красоты<br><span>Beauty</span></h1>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="index.html#price">Цены</a></li>
+                    <li><a href="index.html#director">Руководство</a></li>
+                    <li><a href="index.html#specialists">Специалисты</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="cabinet.html">Кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="register-wrapper">
+		<div class="register-card">
+			<h2>Регистрация</h2>
+			<p class="register-subtitle">Добро пожаловать в личный кабинет!</p>
+			<form id="registerForm" class="register-form">
+				<div class="form-group">
+					<label for="username">Логин</label>
+					<input type="text" name="username" id="username" placeholder="Придумайте логин" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" placeholder="your@email.ru" required>
+				</div>
+				<div class="form-group">
+					<label for="password">Пароль</label>
+					<input type="password" name="password" id="password" placeholder="Не менее 6 символов" required>
+				</div>
+				<button type="submit" class="register-btn">Зарегистрироваться</button>
+				<div id="regError" class="error-message"></div>
+			</form>
+			<p class="login-link">Вы уже зарегистрированы? <a href="login.html">Войти</a></p>
+		</div>
+	</main>
+
+    <footer>
+        <p class="footer-text">© 2026 Салон Красоты Beauty.<br><a href="https://vk.com/cnbbygirl">Вконтакте</a><br><a href="https://t.me/cnbbyy">Телеграм</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const response = await fetch('/backend/register.php', {
+                method: 'POST',
+                body: formData
+            });
+            if (response.redirected) {
+                window.location.href = response.url;
+            } else {
+                const text = await response.text();
+                document.getElementById('regError').textContent = text;
+            }
+        });
+    </script>
+</body>
+</html>

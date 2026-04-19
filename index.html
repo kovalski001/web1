@@ -190,9 +190,9 @@
             <span class="contact-close" onclick="closeContactForm()">&times;</span>
             <h2>Запись на приём</h2>
             <form id="contactForm" onsubmit="submitContactForm(event)">
-                <input type="text" id="contactName" placeholder="Ваше имя" required>
-                <input type="text" id="contactContact" placeholder="Телефон/Email" required>
-                <textarea id="contactMessage" placeholder="Сообщение" rows="4" required></textarea>
+                <input type="text" id="contactName" name="name" placeholder="Ваше имя" required>
+				<input type="text" id="contactContact" name="contact" placeholder="Телефон/Email" required>
+				<textarea id="contactMessage" name="message" placeholder="Сообщение" rows="4" required></textarea>
                 <button type="submit" class="contact-submit">Отправить</button>
             </form>
         </div>

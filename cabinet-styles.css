@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1600px;
+    max-width: 2300px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -19,18 +19,18 @@
 }
 
 .header-content .logo h1 {
-    font-size: 1.8em;
+    font-size: 40px;
     margin: 0;
     text-align: left;
 }
 
 .header-content .logo span {
-    font-size: 1em;
+    font-size: inherit;
     color: #ee6300;
 }
 
 .inner-page nav ul li a {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .inner-page nav ul li a.active {
@@ -436,6 +436,7 @@
     
     .inner-page nav ul li a {
         font-size: 14px;
+		margin-left: 0;
     }
     
     .cabinet-main {
