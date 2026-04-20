@@ -1,32 +1,25 @@
-# оф образ пхп и джинкс
-FROM php:8.2-fpm-alpine
+FROM php:8.2-cli-alpine
 
-# устанавливаем джинкс, sqlite-dev и расширение pdo_sqlite
-RUN apk add --no-cache nginx sqlite sqlite-dev \
+# Устанавливаем SQLite и расширение PDO
+RUN apk add --no-cache sqlite sqlite-dev \
     && docker-php-ext-install pdo_sqlite \
     && apk del sqlite-dev
 
-# копируем конфиг nginx
-COPY nginx/default.conf /etc/nginx/http.d/default.conf
-
-# копируем файлы проекта
+# Копируем все файлы проекта в рабочую папку
 COPY . /var/www/html
 
-# удаляем дублирующиеся папки
+# Удаляем дублирующиеся папки (если есть)
 RUN rm -rf /var/www/html/backend /var/www/html/data
 
-# копируем backend и data отдельно
+# Копируем backend и data отдельно
 COPY backend /var/www/backend
 COPY data /var/www/data
 
-# копируем кастомный конфиг PHP-FPM (чтобы слушал порт 9000)
-COPY php-fpm.d/www.conf /usr/local/etc/php-fpm.d/www.conf
-
-# создаем папку для сессий и даём права
+# Создаём папку для сессий и даём права
 RUN mkdir -p /var/www/data/sessions && chown -R www-data:www-data /var/www/data
 
-# ограничиваем память
-RUN echo "memory_limit = 64M" >> /usr/local/etc/php/conf.d/memory-limit.ini
-
+WORKDIR /var/www/html
 EXPOSE 8080
-CMD sh -c "php-fpm -D && php /var/www/backend/init_db.php && nginx -g 'daemon off;'"
+
+# Запускаем встроенный сервер PHP на порту 8080
+CMD ["php", "-S", "0.0.0.0:8080"]
