@@ -19,6 +19,8 @@ RUN rm -rf /var/www/html/backend /var/www/html/data
 COPY backend /var/www/backend
 COPY data /var/www/data
 
+RUN echo "listen = 127.0.0.1:9000" >> /usr/local/etc/php-fpm.d/zz-docker.conf
+
 # создаем папку для сессий и даём права
 RUN mkdir -p /var/www/data/sessions && chown -R www-data:www-data /var/www/data
 
@@ -26,5 +28,4 @@ RUN mkdir -p /var/www/data/sessions && chown -R www-data:www-data /var/www/data
 RUN echo "memory_limit = 64M" >> /usr/local/etc/php/conf.d/memory-limit.ini
 
 EXPOSE 8080
-# Запускаем PHP-FPM в фоне и Nginx на переднем плане
 CMD sh -c "php-fpm -D && php /var/www/backend/init_db.php && nginx -g 'daemon off;'"
