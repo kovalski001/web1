@@ -2,7 +2,4 @@
   builder = "DOCKERFILE"
 
 [deploy]
-  startCommand = "/bin/sh -c 'php-fpm -D && php /var/www/backend/init_db.php && nginx -g \"daemon off;\"'"
-  healthcheckPath = "/"
-  healthcheckTimeout = 30
-  restartPolicyType = "ON_FAILURE"
+  startCommand = "php -S 0.0.0.0:8080"
