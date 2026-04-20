@@ -27,4 +27,4 @@ RUN echo "memory_limit = 64M" >> /usr/local/etc/php/conf.d/memory-limit.ini
 
 EXPOSE 8080
 # Запускаем PHP-FPM в фоне и Nginx на переднем плане
-CMD sh -c "php-fpm -D && nginx -g 'daemon off;'"
+CMD sh -c "php-fpm -D && php /var/www/backend/init_db.php && nginx -g 'daemon off;'"
