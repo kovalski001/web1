@@ -2,4 +2,7 @@
   builder = "DOCKERFILE"
 
 [deploy]
-  startCommand = "php -S 0.0.0.0:8080"
+  startCommand = "php -S 0.0.0.0:8080 -t /var/www/html"
+
+[[services]]
+  internal_port = 8080
