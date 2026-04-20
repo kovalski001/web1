@@ -19,7 +19,8 @@ RUN rm -rf /var/www/html/backend /var/www/html/data
 COPY backend /var/www/backend
 COPY data /var/www/data
 
-RUN echo "listen = 127.0.0.1:9000" >> /usr/local/etc/php-fpm.d/zz-docker.conf
+# копируем кастомный конфиг PHP-FPM (чтобы слушал порт 9000)
+COPY php-fpm.d/www.conf /usr/local/etc/php-fpm.d/www.conf
 
 # создаем папку для сессий и даём права
 RUN mkdir -p /var/www/data/sessions && chown -R www-data:www-data /var/www/data
