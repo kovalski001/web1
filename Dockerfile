@@ -11,22 +11,24 @@ RUN docker-php-ext-install pdo_sqlite
 COPY nginx/default.conf /etc/nginx/http.d/default.conf
 
 # копируем файлы проекта
-COPY public /var/www/html
+COPY . /var/www/html
+
+# удаляем из /var/www/html папки backend и data, чтобы не дублировать (они будут отдельно)
+RUN rm -rf /var/www/html/backend /var/www/html/data
+
+# Копируем backend и data в нужные места
 COPY backend /var/www/backend
 COPY data /var/www/data
 
 # создаем папку для сессий и даём права
 RUN mkdir -p /var/www/data/sessions && chown -R www-data:www-data /var/www/data
 
-# скрипт для запуска джинкса и пхп
-COPY <<EOF /start.sh
-#!/bin/sh
-php-fpm -D
-nginx -g "daemon off;"
-EOF
-
+# копируем стартовый скрипт
+COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
-EXPOSE 8080
+# ограничиваем память для пхп для работы с рэилвэй
+RUN echo "memory_limit = 64M" >> /usr/local/etc/php/conf.d/memory-limit.ini
 
+EXPOSE 8080
 CMD ["/start.sh"]
