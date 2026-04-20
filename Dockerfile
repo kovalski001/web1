@@ -1,11 +1,10 @@
 # оф образ пхп и джинкс
 FROM php:8.2-fpm-alpine
 
-# устанавливаем джинкс
-RUN apk add --no-cache nginx sqlite
-
-# устанавливаем пхп для работы с sqllite
-RUN docker-php-ext-install pdo_sqlite
+# устанавливаем джинкс, sqlite-dev
+RUN apk add --no-cache nginx sqlite sqlite-dev \
+    && docker-php-ext-install pdo_sqlite \
+    && apk del sqlite-dev  # удаляем dev-пакет для уменьшения размера
 
 # копируем джинкс
 COPY nginx/default.conf /etc/nginx/http.d/default.conf
