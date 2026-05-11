@@ -1,6 +1,6 @@
 function openContactForm() {
     document.getElementById('contactModal').classList.add('active');
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden'; //блокировка прокрутки страницы
 }
 
 function closeContactForm() {
@@ -8,14 +8,15 @@ function closeContactForm() {
     document.body.style.overflow = '';
 }
 
-// отправка данных на сервер
+//отправка данных на сервер
 function submitContactForm(event) {
+    //отмена перезагрузки страницы
     event.preventDefault();
 
     const form = document.getElementById('contactForm');
     const formData = new FormData(form);
 
-    // отправка данных на php обработчик
+    //асинхронная отправка данных на php обработчик
     fetch('/backend/contact.php', {
         method: 'POST',
         body: formData
