@@ -43,7 +43,7 @@ function showSuccessNotification() {
     setTimeout(() => success.classList.remove('active'), 5000);
 }
 
-// закрытие через эскейп
+// закрытие через клик
 document.addEventListener('click', function(event) {
     const modal = document.getElementById('contactModal');
     if (event.target === modal) {
@@ -51,6 +51,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
+// закрытие через эскейп
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
         closeContactForm();
